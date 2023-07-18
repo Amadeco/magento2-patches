@@ -26,9 +26,6 @@
         "magento/module-theme": {
             "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2": "patches/composer/magento-theme/jquery-scroll-passive-2.patch"
         },
-        "magento/module-ui": {
-            "IMPROVEMENTS: Get rid of jQuery effects | https://github.com/vasilii-b/magento2-frontend-improvements": "patches/composer/magento-ui/get-rid-of-jquery-effects.patch"
-        },
         "magepal/magento2-googletagmanager": {
             "Adds compatibility between Amasty GDPR Cookie extension and Magepal Datalayer": "patches/composer/magepal-googletagmanager/magepal-amasty-gdpr-compatibility.patch",
             "Introduce custom gtm.js load event": "patches/composer/magepal-googletagmanager/magepal-eec-gtm-custom-load-event.patch",
