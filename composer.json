@@ -1,5 +1,5 @@
 {
-    "name": "amadeco/amadeco-magento2-patchset",
+    "name": "amadeco/magento2-patchset",
     "type": "patchset",
     "version": "1.0.0",
     "require": {
@@ -21,24 +21,24 @@
             "magento/module-newsletter": [
                 {
                     "description": "Prevents multiple emails sending when accessing confirmation url.",
-                    "filename": "vendor/creativestyle/magento-patches/optional/magento/module-newsletter/prevent-multiple-success-emails-sending.patch",
+                    "filename": "magento-patches/optional/magento/module-newsletter/prevent-multiple-success-emails-sending.patch",
                     "version-constraint": "*"
                 }
             ],
             "magepal/magento2-googletagmanager": [
                 {
                     "description": "Adds compatibility between Amasty GDPR Cookie extension and Magepal Datalayer",
-                    "filename": "vendor/creativestyle/magento-patches/optional/magepal/magento2-googletagmanager/magepal-amasty-gdpr-compatibility.patch",
+                    "filename": "magento-patches/optional/magepal/magento2-googletagmanager/magepal-amasty-gdpr-compatibility.patch",
                     "version-constraint": "*"
                 },
                 {
                     "description": "Introduce custom gtm.js load event",
-                    "filename": "vendor/creativestyle/magento-patches/optional/magepal/magento2-googletagmanager/magepal-eec-gtm-custom-load-event.patch",
+                    "filename": "magento-patches/optional/magepal/magento2-googletagmanager/magepal-eec-gtm-custom-load-event.patch",
                     "version-constraint": ">=2.7.0"
                 },
                 {
                     "description": "Wrap datalayer push method with gtm.js load event",
-                    "filename": "vendor/creativestyle/magento-patches/optional/magepal/magento2-googletagmanager/magepal-google-tag-datalayer-push-fix.patch",
+                    "filename": "magento-patches/optional/magepal/magento2-googletagmanager/magepal-google-tag-datalayer-push-fix.patch",
                     "version-constraint": ">=2.7.0"
                 }
             ]
