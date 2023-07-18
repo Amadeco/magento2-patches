@@ -3,46 +3,88 @@
     "type": "patchset",
     "version": "1.0.0",
     "require": {
-        "cweagans/composer-patches": "^1.7",
         "creativestyle/composer-plugin-patchset": "^2.0",
         "creativestyle/magento-patches": "^1.3"
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
-        "patches": {
-            "aheadworks/module-automatic-related-products": {
-                "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.": "composer-patches/aheadworks-automatic-related-products/replace-zend-laminas-json.patch"
-            },
-            "comwrap/module-elasticsuite-blog-search": {
-                "FIX: Magento 2.4.x support #18": "composer-patches/comwrap-elasticsuite-blog-search/collection.patch"
-            },
-            "magento/framework": {
-                "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements": "composer-patches/magento-framework/import-styles-for-enabled-modules-only.patch"
-            },
-            "magento/module-page-builder": {
-                "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file": "composer-patches/magento-page-builder/optimize-video-background-js.patch"
-            },
-            "magento/magento2-base": {
-                "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1": "composer-patches/magento-base/jquery-scroll-passive-1.patch"
-            },
-            "magento/module-inventory-sales": {
-                "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047": "composer-patches/magento-inventory-sales/BackOrderNotifyCustomerCondition.patch"
-            },
-            "magento/module-theme": {
-                "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2": "composer-patches/magento-theme/jquery-scroll-passive-2.patch"
-            },
-            "mageworx/module-seomarkup" : {
-                "FIX: Support multiselect attribute for color information in SEO markup": "composer-patches/mageworx-seomarkup/mageworx-seomarkup-support-color-array.patch"
-            },
-            "mirasvit/module-email-designer": {
-                "FIX: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))": "composer-patches/mirasvit-email-designer/VariableProvider.patch"
-            },
-            "owebia/magento2-module-shared-php-config": {
-                "FIX: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given": "composer-patches/owebia-module-shared-php-config/nullable-type-parser.patch"
-            },
-            "owebia/magento2-module-shared-license": {
-                "FIX: Removing the checking of the license": "composer-patches/owebia-shared-license/removing-checking-license.patch"
-            }
+        "patchset": {
+            "aheadworks/module-automatic-related-products": [
+                {
+                    "description": "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.",
+                    "filename": "aheadworks-automatic-related-products/replace-zend-laminas-json.patch",
+                    "version": "*"
+                }
+            ],
+            "comwrap/module-elasticsuite-blog-search": [
+                {
+                    "description": "FIX: Magento 2.4.x support #18",
+                    "filename": "magento2-patches/comwrap-elasticsuite-blog-search/collection.patch",
+                    "version": "*"
+                }
+            ],
+            "magento/framework": [
+                {
+                    "description": "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements",
+                    "filename": "composer-patches/magento-framework/import-styles-for-enabled-modules-only.patch",
+                    "version": "*"
+                }
+            ],
+            "magento/module-page-builder": [
+                {
+                    "description": "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file",
+                    "filename": "composer-patches/magento-page-builder/optimize-video-background-js.patch",
+                    "version": "*"
+                }
+            ],
+            "magento/magento2-base": [
+                {
+                    "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1",
+                    "filename": "composer-patches/magento-base/jquery-scroll-passive-1.patch",
+                    "version": "*"
+                }
+            ],
+            "magento/module-inventory-sales": [
+                {
+                    "description": "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047",
+                    "filename": "composer-patches/magento-inventory-sales/BackOrderNotifyCustomerCondition.patch",
+                    "version": "*"
+                }
+            ],
+            "magento/module-theme": [
+                {
+                    "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2",
+                    "filename": "composer-patches/magento-theme/jquery-scroll-passive-2.patch",
+                    "version": "*"
+                }
+            ],
+            "mageworx/module-seomarkup" : [
+                {
+                    "description": "FIX: Support multiselect attribute for color information in SEO markup",
+                    "filename": "composer-patches/mageworx-seomarkup/mageworx-seomarkup-support-color-array.patch",
+                    "version": "*"
+                }
+            ],
+            "mirasvit/module-email-designer": [
+                {
+                    "description": "FIX: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))",
+                    "filename": "composer-patches/mirasvit-email-designer/VariableProvider.patch",
+                    "version": "*"
+                }
+            ],
+            "owebia/magento2-module-shared-php-config": [
+                {
+                    "description": "FIX: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given",
+                    "filename": "composer-patches/owebia-module-shared-php-config/nullable-type-parser.patch",
+                    "version": "*"
+                }
+            ],
+            "owebia/magento2-module-shared-license": [
+                {
+                    "description": "FIX: Removing the checking of the license",
+                    "filename": "owebia-shared-license/removing-checking-license.patch",
+                    "version": "*"
+                }
+            ]
         }
     }
 }
