@@ -1,40 +1,40 @@
 {
     "patches": {
         "aheadworks/module-automatic-related-products": {
-            "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.": "patches/composer/aheadworks-automatic-related-products/replace-zend-laminas-json.patch"
+            "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.": "aheadworks-automatic-related-products/replace-zend-laminas-json.patch"
         },
         "comwrap/module-elasticsuite-blog-search": {
-            "FIX: Magento 2.4.x support #18": "patches/composer/comwrap-elasticsuite-blog-search/collection.patch"
+            "FIX: Magento 2.4.x support #18": "comwrap-elasticsuite-blog-search/collection.patch"
         },
         "magento/framework": {
-            "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements": "patches/composer/magento-framework/import-styles-for-enabled-modules-only.patch"
+            "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements": "magento-framework/import-styles-for-enabled-modules-only.patch"
         },
         "magento/module-page-builder": {
-            "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file": "patches/composer/magento-page-builder/optimize-video-background-js.patch"
+            "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file": "magento-page-builder/optimize-video-background-js.patch"
         },
         "magento/magento2-base": {
-            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1": "patches/composer/magento-base/jquery-scroll-passive-1.patch"
+            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1": "magento-base/jquery-scroll-passive-1.patch"
         },
         "magento/module-inventory-sales": {
-            "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047": "patches/composer/magento-inventory-sales/BackOrderNotifyCustomerCondition.patch"
+            "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047": "magento-inventory-sales/BackOrderNotifyCustomerCondition.patch"
         },
         "magento/module-newsletter": {
-            "FIX: Prevents multiple emails sending when accessing confirmation url.": "patches/composer/magento-newsletter/prevent-multiple-success-emails-sending.patch"
+            "FIX: Prevents multiple emails sending when accessing confirmation url.": "magento-newsletter/prevent-multiple-success-emails-sending.patch"
         },
         "magento/module-theme": {
-            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2": "patches/composer/magento-theme/jquery-scroll-passive-2.patch"
+            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2": "magento-theme/jquery-scroll-passive-2.patch"
         },
         "mageworx/module-seomarkup" : {
-            "FIX: Support multiselect attribute for color information in SEO markup": "patches/composer/mageworx-seomarkup/mageworx-seomarkup-support-color-array.patch"
+            "FIX: Support multiselect attribute for color information in SEO markup": "mageworx-seomarkup/mageworx-seomarkup-support-color-array.patch"
         },
         "mirasvit/module-email-designer": {
-            "FIX: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))": "patches/composer/mirasvit-email-designer/VariableProvider.patch"
+            "FIX: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))": "mirasvit-email-designer/VariableProvider.patch"
         },
         "owebia/magento2-module-shared-php-config": {
-            "FIX: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given": "patches/composer/owebia-module-shared-php-config/nullable-type-parser.patch"
+            "FIX: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given": "owebia-module-shared-php-config/nullable-type-parser.patch"
         },
         "owebia/magento2-module-shared-license": {
-            "FIX: Removing the checking of the license": "patches/composer/owebia-shared-license/removing-checking-license.patch"
+            "FIX: Removing the checking of the license": "owebia-shared-license/removing-checking-license.patch"
         }
     }
 }

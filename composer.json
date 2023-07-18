@@ -1,5 +1,5 @@
 {
-    "name": "amadeco/magento2-patchset",
+    "name": "amadeco/magento2-patches",
     "type": "patchset",
     "version": "1.0.0",
     "require": {
@@ -9,39 +9,6 @@
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
-        "patches-file": "composer-patches/patches.json",
-        "patchset": {
-            "magento/module-ui": [
-                {
-                    "description": "Use jquery slideUp instead of jquery-ui blind effect. Patch cannot be essential because theme-cs > 11.2.0 is needed",
-                    "filename": "magento-patches/optional/magento/module-ui/remove-jquery-ui-blind-effect.patch",
-                    "version-constraint": "*"
-                }
-            ],
-            "magento/module-newsletter": [
-                {
-                    "description": "Prevents multiple emails sending when accessing confirmation url.",
-                    "filename": "magento-patches/optional/magento/module-newsletter/prevent-multiple-success-emails-sending.patch",
-                    "version-constraint": "*"
-                }
-            ],
-            "magepal/magento2-googletagmanager": [
-                {
-                    "description": "Adds compatibility between Amasty GDPR Cookie extension and Magepal Datalayer",
-                    "filename": "magento-patches/optional/magepal/magento2-googletagmanager/magepal-amasty-gdpr-compatibility.patch",
-                    "version-constraint": "*"
-                },
-                {
-                    "description": "Introduce custom gtm.js load event",
-                    "filename": "magento-patches/optional/magepal/magento2-googletagmanager/magepal-eec-gtm-custom-load-event.patch",
-                    "version-constraint": ">=2.7.0"
-                },
-                {
-                    "description": "Wrap datalayer push method with gtm.js load event",
-                    "filename": "magento-patches/optional/magepal/magento2-googletagmanager/magepal-google-tag-datalayer-push-fix.patch",
-                    "version-constraint": ">=2.7.0"
-                }
-            ]
-        }
+        "patches-file": "composer-patches/patches.json"
     }
 }
