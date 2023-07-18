@@ -18,9 +18,6 @@
         "magento/module-inventory-sales": {
             "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047": "magento-inventory-sales/BackOrderNotifyCustomerCondition.patch"
         },
-        "magento/module-newsletter": {
-            "FIX: Prevents multiple emails sending when accessing confirmation url.": "magento-newsletter/prevent-multiple-success-emails-sending.patch"
-        },
         "magento/module-theme": {
             "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2": "magento-theme/jquery-scroll-passive-2.patch"
         },
