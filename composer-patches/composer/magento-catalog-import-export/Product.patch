@@ -1,0 +1,13 @@
+diff --git a/vendor/magento/module-catalog-import-export/Model/Import/Product.php b/vendor/magento/module-catalog-import-export/Model/Import/Product.php
+index 25dc5360c8..54828bd349 100644
+--- a/vendor/magento/module-catalog-import-export/Model/Import/Product.php
++++ b/vendor/magento/module-catalog-import-export/Model/Import/Product.php
+@@ -2026,7 +2026,7 @@ class Product extends AbstractEntity
+                         )
+                     ) {
+                         $attrValue = $this->dateTime->formatDate($attrValue, false);
+-                    } elseif ('datetime' == $attribute->getBackendType() && strtotime($attrValue)) {
++                    } elseif ('datetime' == $attribute->getBackendType() && strtotime((string) $attrValue)) {
+                         $attrValue = gmdate(
+                             'Y-m-d H:i:s',
+                             $this->_localeDate->date($attrValue)->getTimestamp()

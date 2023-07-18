@@ -1,0 +1,50 @@
+{
+    "patches": {
+        "aheadworks/module-automatic-related-products": {
+            "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.": "patches/composer/aheadworks-automatic-related-products/replace-zend-laminas-json.patch",
+            "FIX: [P2G-2134] Aheadworks autorelated products - duplicated elements in collection.": "patches/composer/aheadworks-automatic-related-products/add_group_by_sku_at_product_collection.patch"
+        },
+        "comwrap/module-elasticsuite-blog-search": {
+            "FIX: Magento 2.4.x support #18": "patches/composer/comwrap-elasticsuite-blog-search/collection.patch"
+        },
+        "magento/framework": {
+            "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements": "patches/composer/magento-framework/import-styles-for-enabled-modules-only.patch"
+        },
+        "magento/module-page-builder": {
+            "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file": "patches/composer/magento-page-builder/optimize-video-background-js.patch"
+        },
+        "magento/magento2-base": {
+            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1": "patches/composer/magento-base/jquery-scroll-passive-1.patch",
+            "IMPROVEMENTS: Remove date validation to avoid to load Moment.js library": "patches/composer/magento-base/remove-date-validation.patch"
+        },
+        "magento/module-inventory-sales": {
+            "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047": "patches/composer/magento-inventory-sales/BackOrderNotifyCustomerCondition.patch"
+        },
+        "magento/module-newsletter": {
+            "FIX: Prevents multiple emails sending when accessing confirmation url.": "patches/composer/magento-newsletter/prevent-multiple-success-emails-sending.patch"
+        },
+        "magento/module-theme": {
+            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2": "patches/composer/magento-theme/jquery-scroll-passive-2.patch"
+        },
+        "magento/module-ui": {
+            "IMPROVEMENTS: Get rid of jQuery effects | https://github.com/vasilii-b/magento2-frontend-improvements": "patches/composer/magento-ui/get-rid-of-jquery-effects.patch"
+        },
+        "magepal/magento2-googletagmanager": {
+            "Adds compatibility between Amasty GDPR Cookie extension and Magepal Datalayer": "patches/composer/magepal-googletagmanager/magepal-amasty-gdpr-compatibility.patch",
+            "Introduce custom gtm.js load event": "patches/composer/magepal-googletagmanager/magepal-eec-gtm-custom-load-event.patch",
+            "Wrap datalayer push method with gtm.js load event": "patches/composer/magepal-googletagmanager/magepal-google-tag-datalayer-push-fix.patch"
+        },
+        "mageworx/module-seomarkup" : {
+            "FIX: Support multiselect attribute for color information in SEO markup": "patches/composer/mageworx-seomarkup/mageworx-seomarkup-support-color-array.patch"
+        },
+        "mirasvit/module-email-designer": {
+            "FIX: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))": "patches/composer/mirasvit-email-designer/VariableProvider.patch"
+        },
+        "owebia/magento2-module-shared-php-config": {
+            "FIX: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given": "patches/composer/owebia-module-shared-php-config/nullable-type-parser.patch"
+        },
+        "owebia/magento2-module-shared-license": {
+            "FIX: Removing the checking of the license": "patches/composer/owebia-shared-license/removing-checking-license.patch"
+        }
+    }
+}

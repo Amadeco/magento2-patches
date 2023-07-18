@@ -1,0 +1,41 @@
+diff --git a/vendor/owebia/magento2-module-shared-license/Model/License.php b/vendor/owebia/magento2-module-shared-license/Model/License.php
+index cfae96df7..eebdb1638 100644
+--- a/vendor/owebia/magento2-module-shared-license/Model/License.php
++++ b/vendor/owebia/magento2-module-shared-license/Model/License.php
+@@ -296,6 +296,10 @@ EOD;
+ 
+     private function checkLicense()
+     {
++        $this->status = 'success';
++        $this->messages = [];
++
++        /*
+         $tokenData = $this->getTokenData();
+         if (isset($tokenData->status) && is_string($tokenData->status)
+             && isset($tokenData->messages) && is_array($tokenData->messages)
+@@ -315,6 +319,7 @@ EOD;
+                 $this->messages[] = __("Invalid license, please contact support");
+             }
+         }
++        */
+     }
+ 
+     public function isValid()
+@@ -324,6 +329,9 @@ EOD;
+ 
+     public function getStatus($forceRefresh = false)
+     {
++        return 'success';
++
++        /*
+         if ($forceRefresh) {
+             $this->retrieveLicense();
+         }
+@@ -333,6 +341,7 @@ EOD;
+         }
+ 
+         return $this->status;
++        */
+     }
+ 
+     public function hasError($error)

@@ -1,0 +1,14 @@
+{
+    "name": "amadeco/amadeco-magento2-patchset",
+    "type": "patchset",
+    "version": "1.0.0",
+    "require": {
+        "cweagans/composer-patches": "^1.7",
+        "creativestyle/composer-plugin-patchset": "^2.0",
+        "creativestyle/magento-patches": "^1.3"
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patches-file": "composer-patches/patches.json"
+    }
+} 

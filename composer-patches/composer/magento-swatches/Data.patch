@@ -1,0 +1,20 @@
+diff --git a/vendor/magento/module-swatches/Helper/Data.php b/vendor/magento/module-swatches/Helper/Data.php
+index dd257de331..e5e38d6515 100644
+--- a/vendor/magento/module-swatches/Helper/Data.php
++++ b/vendor/magento/module-swatches/Helper/Data.php
+@@ -196,7 +196,14 @@ class Data
+             $usedProducts = $configurableProduct->getTypeInstance()->getUsedProducts($configurableProduct);
+ 
+             foreach ($usedProducts as $simpleProduct) {
+-                if (!array_diff_assoc($requiredAttributes, $simpleProduct->getData())
++                $simpleProductData = $simpleProduct->getData();
++
++                $diffResult = array_udiff($requiredAttributes, $simpleProductData, function($a, $b) {
++                    // the callback must return 0 for equal values
++                    return intval($a != $b);
++                });
++
++                if (!$diffResult
+                     && $this->isMediaAvailable($simpleProduct, $attributeCode)
+                 ) {
+                     return $simpleProduct;

@@ -1,0 +1,13 @@
+diff --git a/vendor/owebia/magento2-module-shared-php-config/Model/Parser.php b/vendor/owebia/magento2-module-shared-php-config/Model/Parser.php
+index e90bea423..c9d7c41b8 100644
+--- a/vendor/owebia/magento2-module-shared-php-config/Model/Parser.php
++++ b/vendor/owebia/magento2-module-shared-php-config/Model/Parser.php
+@@ -76,7 +76,7 @@ class Parser implements ParserInterface
+      * @param ParserContextInterface $context
+      * @param string $configuration
+      */
+-    public function parse(ParserContextInterface $context, string $configuration): void
++    public function parse(ParserContextInterface $context, ?string $configuration): void
+     {
+         $context->getDebug() && $this->debugLogger->collapseOpen($context->getDebugPrefix());
+ 

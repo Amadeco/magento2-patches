@@ -1,0 +1,19 @@
+diff --git a/vendor/mageworx/module-seomarkup/Block/Head/SocialMarkup/Product.php b/vendor/mageworx/module-seomarkup/Block/Head/SocialMarkup/Product.php
+index 972dc8397..8de17d204 100644
+--- a/vendor/mageworx/module-seomarkup/Block/Head/SocialMarkup/Product.php
++++ b/vendor/mageworx/module-seomarkup/Block/Head/SocialMarkup/Product.php
+@@ -164,7 +164,13 @@ class Product extends \MageWorx\SeoMarkup\Block\Head\SocialMarkup
+             }
+ 
+             if ($color) {
+-                $html .= "<meta property=\"product:color\" content=\"" . $color . "\"/>\n";
++                if (is_array($color)) {
++                    foreach ($color as $value) {
++                        $html .= "<meta property=\"product:color\" content=\"" . $value . "\"/>\n";
++                    }
++                } else {
++                    $html .= "<meta property=\"product:color\" content=\"" . $color . "\"/>\n";
++                }
+             }
+ 
+             if ($brand) {

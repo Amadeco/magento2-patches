@@ -1,0 +1,18 @@
+diff --git a/vendor/mirasvit/module-core/src/Core/Helper/Text.php b/vendor/mirasvit/module-core/src/Core/Helper/Text.php
+index 7f263ae191..7a6284ee7b 100644
+--- a/vendor/mirasvit/module-core/src/Core/Helper/Text.php
++++ b/vendor/mirasvit/module-core/src/Core/Helper/Text.php
+@@ -155,11 +155,11 @@ class Text extends AbstractHelper implements TextHelperInterface
+             $preparedLength = $length;
+             if (!$breakWords) {
+                 $preparedString = preg_replace('/\s+?(\S+)?$/u', '', substr($string, 0, $length + 1));
+-                $preparedLength = strlen($preparedString);
++                $preparedLength = strlen((string) $preparedString);
+             }
+             $remainder = substr($string, $preparedLength, $originalLength);
+ 
+-            return substr($preparedString, 0, $length) . $etc;
++            return substr((string) $preparedString, 0, $length) . $etc;
+         }
+ 
+         return $string;
