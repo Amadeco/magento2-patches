@@ -12,3 +12,4 @@ index 24bcb24..ebbf88a 100644
 +            });
              f.parentNode.insertBefore(j, f);
          })(window, document, 'script', dataLayerName, accountId);
+ 

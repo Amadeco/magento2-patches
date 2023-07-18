@@ -1,8 +1,7 @@
 {
     "patches": {
         "aheadworks/module-automatic-related-products": {
-            "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.": "patches/composer/aheadworks-automatic-related-products/replace-zend-laminas-json.patch",
-            "FIX: [P2G-2134] Aheadworks autorelated products - duplicated elements in collection.": "patches/composer/aheadworks-automatic-related-products/add_group_by_sku_at_product_collection.patch"
+            "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.": "patches/composer/aheadworks-automatic-related-products/replace-zend-laminas-json.patch"
         },
         "comwrap/module-elasticsuite-blog-search": {
             "FIX: Magento 2.4.x support #18": "patches/composer/comwrap-elasticsuite-blog-search/collection.patch"
@@ -14,8 +13,7 @@
             "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file": "patches/composer/magento-page-builder/optimize-video-background-js.patch"
         },
         "magento/magento2-base": {
-            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1": "patches/composer/magento-base/jquery-scroll-passive-1.patch",
-            "IMPROVEMENTS: Remove date validation to avoid to load Moment.js library": "patches/composer/magento-base/remove-date-validation.patch"
+            "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1": "patches/composer/magento-base/jquery-scroll-passive-1.patch"
         },
         "magento/module-inventory-sales": {
             "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047": "patches/composer/magento-inventory-sales/BackOrderNotifyCustomerCondition.patch"
@@ -25,11 +23,6 @@
         },
         "magento/module-theme": {
             "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2": "patches/composer/magento-theme/jquery-scroll-passive-2.patch"
-        },
-        "magepal/magento2-googletagmanager": {
-            "Adds compatibility between Amasty GDPR Cookie extension and Magepal Datalayer": "patches/composer/magepal-googletagmanager/magepal-amasty-gdpr-compatibility.patch",
-            "Introduce custom gtm.js load event": "patches/composer/magepal-googletagmanager/magepal-eec-gtm-custom-load-event.patch",
-            "Wrap datalayer push method with gtm.js load event": "patches/composer/magepal-googletagmanager/magepal-google-tag-datalayer-push-fix.patch"
         },
         "mageworx/module-seomarkup" : {
             "FIX: Support multiselect attribute for color information in SEO markup": "patches/composer/mageworx-seomarkup/mageworx-seomarkup-support-color-array.patch"
