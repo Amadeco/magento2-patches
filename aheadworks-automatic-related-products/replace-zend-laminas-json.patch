@@ -1,7 +1,7 @@
-diff --git a/vendor/aheadworks/module-automatic-related-products/Block/Related/Block.php b/vendor/aheadworks/module-automatic-related-products/Block/Related/Block.php
+diff --git a/Block/Related/Block.php b/Block/Related/Block.php
 index 39ea7a980..8f2001de2 100644
---- a/vendor/aheadworks/module-automatic-related-products/Block/Related/Block.php
-+++ b/vendor/aheadworks/module-automatic-related-products/Block/Related/Block.php
+--- a/Block/Related/Block.php
++++ b/Block/Related/Block.php
 @@ -206,7 +206,7 @@ class Block extends ElementTemplate
       */
      public function jsonEncode($params)

@@ -1,6 +1,6 @@
-diff --git a/vendor/magento/framework/Css/PreProcessor/Instruction/MagentoImport.php b/vendor/magento/framework/Css/PreProcessor/Instruction/MagentoImport.php
---- a/vendor/magento/framework/Css/PreProcessor/Instruction/MagentoImport.php	(date 1613374030628)
-+++ b/vendor/magento/framework/Css/PreProcessor/Instruction/MagentoImport.php	(date 1613374030628)
+diff --git a/Css/PreProcessor/Instruction/MagentoImport.php b/Css/PreProcessor/Instruction/MagentoImport.php
+--- a/Css/PreProcessor/Instruction/MagentoImport.php	(date 1613374030628)
++++ b/Css/PreProcessor/Instruction/MagentoImport.php	(date 1613374030628)
 @@ -56,6 +56,10 @@
       * @var ThemeProviderInterface
       */

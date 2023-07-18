@@ -1,7 +1,7 @@
-diff --git a/vendor/magento/module-page-builder/view/base/web/js/widget/video-background.js b/vendor/magento/module-page-builder/view/base/web/js/widget/video-background.js
+diff --git a/view/base/web/js/widget/video-background.js b/view/base/web/js/widget/video-background.js
 index d918ab8f6..e42c001f1 100644
---- a/vendor/magento/module-page-builder/view/base/web/js/widget/video-background.js
-+++ b/vendor/magento/module-page-builder/view/base/web/js/widget/video-background.js
+--- a/view/base/web/js/widget/video-background.js
++++ b/view/base/web/js/widget/video-background.js
 @@ -18,23 +18,26 @@ define([
              return;
          }

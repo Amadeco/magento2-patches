@@ -1,7 +1,7 @@
-diff --git a/vendor/owebia/magento2-module-shared-license/Model/License.php b/vendor/owebia/magento2-module-shared-license/Model/License.php
+diff --git a/Model/License.php b/Model/License.php
 index cfae96df7..eebdb1638 100644
---- a/vendor/owebia/magento2-module-shared-license/Model/License.php
-+++ b/vendor/owebia/magento2-module-shared-license/Model/License.php
+--- a/Model/License.php
++++ b/Model/License.php
 @@ -296,6 +296,10 @@ EOD;
  
      private function checkLicense()

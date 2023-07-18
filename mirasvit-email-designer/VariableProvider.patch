@@ -1,7 +1,7 @@
-diff --git a/vendor/mirasvit/module-email-designer/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php b/vendor/mirasvit/module-email-designer/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php
+diff --git a/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php b/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php
 index 846acc6ab3..6de6339e5f 100644
---- a/vendor/mirasvit/module-email-designer/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php
-+++ b/vendor/mirasvit/module-email-designer/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php
+--- a/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php
++++ b/src/EmailDesigner/Service/TemplateEngine/Liquid/VariableProvider.php
 @@ -229,7 +229,7 @@ class VariableProvider implements VariableProviderInterface
                  'value' => $value,
                  'label' => $docblock->hasTag(VariableInterface::DOCBLOCK_TAG_DESCRIPTION)

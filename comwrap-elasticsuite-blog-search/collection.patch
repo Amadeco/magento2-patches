@@ -1,7 +1,7 @@
-diff --git a/vendor/comwrap/module-elasticsuite-blog-search/Model/ResourceModel/Post/Fulltext/Collection.php b/vendor/comwrap/module-elasticsuite-blog-search/Model/ResourceModel/Post/Fulltext/Collection.php
+diff --git a/Model/ResourceModel/Post/Fulltext/Collection.php b/Model/ResourceModel/Post/Fulltext/Collection.php
 index 4c0bf5aaec..95753de4a6 100755
---- a/vendor/comwrap/module-elasticsuite-blog-search/Model/ResourceModel/Post/Fulltext/Collection.php
-+++ b/vendor/comwrap/module-elasticsuite-blog-search/Model/ResourceModel/Post/Fulltext/Collection.php
+--- a/Model/ResourceModel/Post/Fulltext/Collection.php
++++ b/Model/ResourceModel/Post/Fulltext/Collection.php
 @@ -101,7 +101,7 @@ class Collection extends \Magefan\Blog\Model\ResourceModel\Post\Collection
      /**
       * {@inheritDoc}

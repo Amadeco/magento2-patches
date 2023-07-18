@@ -1,7 +1,7 @@
-diff --git a/vendor/magento/module-swatches/Helper/Data.php b/vendor/magento/module-swatches/Helper/Data.php
+diff --git a/Helper/Data.php b/Helper/Data.php
 index dd257de331..e5e38d6515 100644
---- a/vendor/magento/module-swatches/Helper/Data.php
-+++ b/vendor/magento/module-swatches/Helper/Data.php
+--- a/Helper/Data.php
++++ b/Helper/Data.php
 @@ -196,7 +196,14 @@ class Data
              $usedProducts = $configurableProduct->getTypeInstance()->getUsedProducts($configurableProduct);
  

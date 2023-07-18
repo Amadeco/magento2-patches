@@ -1,7 +1,7 @@
-diff --git a/vendor/magento/module-inventory-sales/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php b/vendor/magento/module-inventory-sales/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php
+diff --git a/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php b/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php
 index 813679b4..3f619130 100644
---- a/vendor/magento/module-inventory-sales/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php
-+++ b/vendor/magento/module-inventory-sales/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php
+--- a/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php
++++ b/Model/IsProductSalableCondition/BackOrderNotifyCustomerCondition.php
 @@ -86,8 +86,7 @@ class BackOrderNotifyCustomerCondition implements IsProductSalableForRequestedQt
                      $this->productSalabilityErrorFactory->create([
                          'code' => 'back_order-not-enough',
