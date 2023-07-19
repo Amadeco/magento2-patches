@@ -11,77 +11,96 @@
             "aheadworks/module-automatic-related-products": [
                 {
                     "description": "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.",
-                    "filename": "aheadworks-automatic-related-products/replace-zend-laminas-json.patch",
+                    "filename": "aheadworks/module-automatic-related-products/replace-zend-laminas-json.patch",
                     "version": "*"
                 }
             ],
             "comwrap/module-elasticsuite-blog-search": [
                 {
                     "description": "FIX: Magento 2.4.x support #18",
-                    "filename": "comwrap-elasticsuite-blog-search/collection.patch",
+                    "filename": "comwrap/module-elasticsuite-blog-search/collection.patch",
                     "version": "*"
                 }
             ],
             "magento/framework": [
                 {
                     "description": "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements",
-                    "filename": "magento-framework/import-styles-for-enabled-modules-only.patch",
-                    "version": "*"
-                }
-            ],
-            "magento/module-page-builder": [
-                {
-                    "description": "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file",
-                    "filename": "magento-page-builder/optimize-video-background-js.patch",
+                    "filename": "magento/framework/import-styles-for-enabled-modules-only.patch",
                     "version": "*"
                 }
             ],
             "magento/magento2-base": [
                 {
                     "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1",
-                    "filename": "magento-base/jquery-scroll-passive-1.patch",
+                    "filename": "magento/magento2-base/jquery-scroll-passive-1.patch",
                     "version": "*"
+                }
+            ],
+            "magento/module-checkout": [
+                {
+                    "description": "Fix displaying error message about no active cart after placing order",
+                    "filename": "magento/module-checkout/m245-fix-customer-has-no-active-cart.patch",
+                    "version-constraint": ">=100.4.5"
                 }
             ],
             "magento/module-inventory-sales": [
                 {
                     "description": "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047",
-                    "filename": "magento-inventory-sales/BackOrderNotifyCustomerCondition.patch",
+                    "filename": "magento/module-inventory-sales/BackOrderNotifyCustomerCondition.patch",
+                    "version": "*"
+                }
+            ],
+            "magento/module-page-builder": [
+                {
+                    "description": "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file",
+                    "filename": "magento/module-page-builder/optimize-video-background-js.patch",
                     "version": "*"
                 }
             ],
             "magento/module-theme": [
                 {
                     "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2",
-                    "filename": "magento-theme/jquery-scroll-passive-2.patch",
+                    "filename": "magento/module-theme/jquery-scroll-passive-2.patch",
                     "version": "*"
                 }
             ],
             "mageworx/module-seomarkup" : [
                 {
                     "description": "FIX: Support multiselect attribute for color information in SEO markup",
-                    "filename": "mageworx-seomarkup/mageworx-seomarkup-support-color-array.patch",
+                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-support-color-array.patch",
                     "version": "*"
+                },
+                {
+                    "description": "Fix product reviews on category page (LEDS)",
+                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-fix-product-review.patch",
+                    "version-constraint": ">=2.6.1"
                 }
             ],
             "mirasvit/module-email-designer": [
                 {
                     "description": "FIX: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))",
-                    "filename": "mirasvit-email-designer/VariableProvider.patch",
+                    "filename": "mirasvit/module-email-designer/VariableProvider.patch",
                     "version": "*"
+                }
+            ],
+            "mirasvit/module-report-api": [
+                {
+                    "description": "Don't skip filter fields for tmp tables (IPET-2074)",
+                    "filename": "mirasvit/module-report-api/do-not-skip-filter-fields-for-tmp-tables.patch",
+                    "version-constraint": ">=1.0.60"
                 }
             ],
             "owebia/magento2-module-shared-php-config": [
                 {
                     "description": "FIX: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given",
-                    "filename": "owebia-module-shared-php-config/nullable-type-parser.patch",
+                    "filename": "owebia/magento2-module-shared-php-config/nullable-type-parser.patch",
                     "version": "*"
                 }
             ],
             "owebia/magento2-module-shared-license": [
                 {
                     "description": "FIX: Removing the checking of the license",
-                    "filename": "owebia-shared-license/removing-checking-license.patch",
+                    "filename": "owebia/magento2-module-shared-license/removing-checking-license.patch",
                     "version": "*"
                 }
             ]
