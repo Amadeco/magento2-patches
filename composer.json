@@ -22,6 +22,13 @@
                     "version": "*"
                 }
             ],
+            "m2-boilerplate/module-lazy-load": [
+                {
+                    "description": "Replace original placeholder",
+                    "filename": "m2-boilerplate/module-lazy-load/replace-placeholder.patch",
+                    "version": "*"
+                }
+            ],
             "magento/framework": [
                 {
                     "description": "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements",
@@ -74,6 +81,13 @@
                     "description": "Fix product reviews on category page (LEDS)",
                     "filename": "mageworx/module-seomarkup/mageworx-seomarkup-fix-product-review.patch",
                     "version-constraint": ">=2.6.1"
+                }
+            ],
+            "mirasvit/module-core": [
+                {
+                    "description": "Remove license verification",
+                    "filename": "mirasvit/module-core/remove-license-verification.patch",
+                    "version": "*"
                 }
             ],
             "mirasvit/module-email-designer": [

@@ -1,0 +1,13 @@
+diff --git a/vendor/m2-boilerplate/module-lazy-load/src/Service/HtmlReplacer.php b/vendor/m2-boilerplate/module-lazy-load/src/Service/HtmlReplacer.php
+index a5b4dc03d..db10d4dcd 100644
+--- a/vendor/m2-boilerplate/module-lazy-load/src/Service/HtmlReplacer.php
++++ b/vendor/m2-boilerplate/module-lazy-load/src/Service/HtmlReplacer.php
+@@ -11,7 +11,7 @@ class HtmlReplacer
+     /**
+      * 1x1 Pixel Gif as a placeholder
+      */
+-    const PLACEHOLDER = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
++    const PLACEHOLDER = 'data:,';
+ 
+     /**
+      * @var Config

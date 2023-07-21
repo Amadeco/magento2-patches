@@ -1,0 +1,105 @@
+diff --git a/vendor/mirasvit/module-core/src/Core/Model/License.php b/vendor/mirasvit/module-core/src/Core/Model/License.php
+index 9ba74ac24..afe20d451 100644
+--- a/vendor/mirasvit/module-core/src/Core/Model/License.php
++++ b/vendor/mirasvit/module-core/src/Core/Model/License.php
+@@ -152,6 +152,7 @@ class License
+      */
+     public function getStatus($className = '')
+     {
++        /*
+         if ($this->load($className) === true) {
+             return true;
+         }
+@@ -176,6 +177,7 @@ class License
+         if (isset($data['message'])) {
+             return $data['message'];
+         }
++        */
+ 
+         return true;
+     }
+@@ -185,6 +187,7 @@ class License
+      */
+     public function getRequestUrl()
+     {
++        /*
+         $params        = [];
+         $params['v']   = 4;
+         $params['d']   = $this->getDomain();
+@@ -198,6 +201,8 @@ class License
+         $query = http_build_query($params);
+ 
+         return 'https://lc.mirasvit.com/lc/check/?' . $query;
++        */
++        return null;
+     }
+ 
+     /**
+@@ -205,6 +210,7 @@ class License
+      */
+     public function isNeedUpdate()
+     {
++        /*
+         $data = $this->getFlagData($this->license);
+ 
+         if (!$data) {
+@@ -226,7 +232,7 @@ class License
+                 return true;
+             }
+         }
+-
++        */
+         return false;
+     }
+ 
+@@ -292,6 +298,7 @@ class License
+      */
+     private function request()
+     {
++        /*
+         $params        = [];
+         $params['v']   = 4;
+         $params['d']   = $this->getDomain();
+@@ -306,7 +313,7 @@ class License
+ 
+         $result['time'] = time();
+         $this->saveFlagData($this->license, $result);
+-
++        */
+         return $this;
+     }
+ 
+@@ -338,6 +345,7 @@ class License
+      */
+     private function getFlagData($license)
+     {
++        /*
+         $flag = $this->flagFactory->create(['data' => ['flag_code' => "m" . $license]])
+             ->loadSelf();
+ 
+@@ -352,7 +360,7 @@ class License
+                 return [];
+             }
+         }
+-
++        */
+         return [];
+     }
+ 
+@@ -366,6 +374,7 @@ class License
+      */
+     private function sendRequest($endpoint, $params)
+     {
++        /*
+         $curl   = $this->curlFactory->create();
+         $config = ['timeout' => 10];
+ 
+@@ -390,7 +399,7 @@ class License
+         } catch (\Exception $e) {
+ 
+         }
+-
++        */
+         return [];
+     }
+ 
