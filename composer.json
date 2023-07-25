@@ -74,7 +74,7 @@
             "magento/module-ui": [
                 {
                     "description": "This will remove some range slider which we never seen, datapicker (don’t remove it if you have it somewhere on your website) and a color picker (no idea where you may need a color picker on frontend).",
-                    "filename": "magento2-patches/magento/module-ui/remove-unnecessary-lib.patch",
+                    "filename": "magento/module-ui/remove-unnecessary-lib.patch",
                     "version": "*"
                 }
             ],
