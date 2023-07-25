@@ -1,0 +1,36 @@
+https://olegnax.com/version-1-7-of-athlete2-magento-2-theme-how-to-improve-page-speed-score-for-mobile/
+
+This will remove some range slider which we never seen, 
+datapicker (don’t remove it if you have it somewhere on your website) 
+and a color picker (no idea where you may need a color picker on frontend).
+
+diff --git a/view/base/web/js/lib/knockout/bindings/bootstrap.js b/view/base/web/js/lib/knockout/bindings/bootstrap.js
+index 83d43d269..5466a4d73 100644
+--- a/view/base/web/js/lib/knockout/bindings/bootstrap.js
++++ b/view/base/web/js/lib/knockout/bindings/bootstrap.js
+@@ -22,13 +22,13 @@ define(function (require) {
+         resizable:      require('./resizable'),
+         i18n:           require('./i18n'),
+         scope:          require('./scope'),
+-        range:          require('./range'),
++        //range:          require('./range'),
+         mageInit:       require('./mage-init'),
+         keyboard:       require('./keyboard'),
+         optgroup:       require('./optgroup'),
+         afterRender:     require('./after-render'),
+         autoselect:     require('./autoselect'),
+-        datepicker:     require('./datepicker'),
++        //datepicker:     require('./datepicker'),
+         outerClick:     require('./outer_click'),
+         fadeVisible:    require('./fadeVisible'),
+         collapsible:    require('./collapsible'),
+@@ -37,7 +37,7 @@ define(function (require) {
+         bindHtml:       require('./bind-html'),
+         tooltip:        require('./tooltip'),
+         repeat:         require('knockoutjs/knockout-repeat'),
+-        fastForEach:    require('knockoutjs/knockout-fast-foreach'),
+-        colorPicker:    require('./color-picker')
++        fastForEach:    require('knockoutjs/knockout-fast-foreach')
++        //colorPicker:    require('./color-picker')
+     };
+ });
