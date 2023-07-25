@@ -1,7 +1,7 @@
-diff --git a/Core/Model/License.php b/Core/Model/License.php
+diff --git a/src/Core/Model/License.php b/src/Core/Model/License.php
 index 9ba74ac24..afe20d451 100644
---- a/Core/Model/License.php
-+++ b/Core/Model/License.php
+--- a/src/Core/Model/License.php
++++ b/src/Core/Model/License.php
 @@ -152,6 +152,7 @@ class License
       */
      public function getStatus($className = '')

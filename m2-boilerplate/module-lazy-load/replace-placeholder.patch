@@ -1,7 +1,7 @@
-diff --git a/Service/HtmlReplacer.php b/Service/HtmlReplacer.php
+diff --git a/src/Service/HtmlReplacer.php b/src/Service/HtmlReplacer.php
 index a5b4dc03d..db10d4dcd 100644
---- a/Service/HtmlReplacer.php
-+++ b/Service/HtmlReplacer.php
+--- a/src/Service/HtmlReplacer.php
++++ b/src/Service/HtmlReplacer.php
 @@ -11,7 +11,7 @@ class HtmlReplacer
      /**
       * 1x1 Pixel Gif as a placeholder
