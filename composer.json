@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0",
-        "creativestyle/magento-patches": "^1.3"
+        "creativestyle/magento-patches": "dev-master"
     },
     "extra": {
         "patchset": {
@@ -68,13 +68,6 @@
                 {
                     "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2",
                     "filename": "magento/module-theme/jquery-scroll-passive-2.patch",
-                    "version": "*"
-                }
-            ],
-            "magento/module-ui": [
-                {
-                    "description": "This will remove some range slider which we never seen, datapicker (don’t remove it if you have it somewhere on your website) and a color picker (no idea where you may need a color picker on frontend).",
-                    "filename": "magento/module-ui/remove-unnecessary-lib.patch",
                     "version": "*"
                 }
             ],
