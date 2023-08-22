@@ -57,13 +57,6 @@
                     "version": "*"
                 }
             ],
-            "magento/module-page-builder": [
-                {
-                    "description": "IMPROVEMENTS: Remove large JS from the define to prevent all of these JS from being loaded with the main file",
-                    "filename": "magento/module-page-builder/optimize-video-background-js.patch",
-                    "version": "*"
-                }
-            ],
             "magento/module-theme": [
                 {
                     "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2",
