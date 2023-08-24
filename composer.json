@@ -1,7 +1,7 @@
 {
     "name": "amadeco/magento2-patches",
     "type": "patchset",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0",
         "creativestyle/magento-patches": "^1.3"
