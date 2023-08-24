@@ -1,7 +1,7 @@
 {
     "name": "amadeco/magento2-patches",
     "type": "patchset",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0",
         "creativestyle/magento-patches": "^1.3"
@@ -19,13 +19,6 @@
                 {
                     "description": "FIX: Magento 2.4.x support #18",
                     "filename": "comwrap/module-elasticsuite-blog-search/collection.patch",
-                    "version": "*"
-                }
-            ],
-            "m2-boilerplate/module-lazy-load": [
-                {
-                    "description": "Replace original placeholder",
-                    "filename": "m2-boilerplate/module-lazy-load/replace-placeholder.patch",
                     "version": "*"
                 }
             ],
