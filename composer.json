@@ -96,7 +96,7 @@
                 },
                 {
                     "description": "Fix: product reviews on category page (LEDS)",
-                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-Fix-product-review.patch",
+                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-fix-product-review.patch",
                     "version-constraint": ">=2.6.1"
                 }
             ],
