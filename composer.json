@@ -1,7 +1,7 @@
 {
     "name": "amadeco/magento2-patches",
     "type": "patchset",
-    "version": "1.1.3",
+    "version": "1.1.4",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0",
         "creativestyle/magento-patches": "^1.3"
@@ -10,98 +10,129 @@
         "patchset": {
             "aheadworks/module-automatic-related-products": [
                 {
-                    "description": "FIX: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.",
+                    "description": "Fix: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.",
                     "filename": "aheadworks/module-automatic-related-products/replace-zend-laminas-json.patch",
-                    "version": "*"
+                    "version-constraint": "^1.9.2"
+                }
+            ],
+            "amasty/pgrid": [
+                {
+                    "description": "Disable set url_path on inline url_key editor to fix an error with duplicated URL during product save",
+                    "filename": "amasty/pgrid/amasty-pgrid-disable-set-url_path-for-product.patch",
+                    "version-constraint": "^1.9.2"
+                },
+                {
+                    "description": "Fix an error with duplicated insert to amasty_pgrid_qty_sold after product save",
+                    "filename": "amasty/pgrid/amasty-pgrid-fix-error-with-duplicated-insert.patch",
+                    "version-constraint": "^1.9.2"
+                },
+                {
+                    "description": "Fix for Amasty filter 'Availability' on product grid (IPET-1069]",
+                    "filename": "amasty/pgrid/amasty-pgrid-msi-availability.patch",
+                    "version-constraint": "^1.9.2"
                 }
             ],
             "comwrap/module-elasticsuite-blog-search": [
                 {
-                    "description": "FIX: Magento 2.4.x support #18",
+                    "description": "Fix: Magento 2.4.x support #18",
                     "filename": "comwrap/module-elasticsuite-blog-search/collection.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "magento/framework": [
                 {
-                    "description": "IMPROVEMENTS: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-improvements",
+                    "description": "Improvements: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-Improvements",
                     "filename": "magento/framework/import-styles-for-enabled-modules-only.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "magento/magento2-base": [
                 {
-                    "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1",
+                    "description": "Improvements: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1",
                     "filename": "magento/magento2-base/jquery-scroll-passive-1.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "magento/module-checkout": [
                 {
-                    "description": "Fix displaying error message about no active cart after placing order",
-                    "filename": "magento/module-checkout/m245-fix-customer-has-no-active-cart.patch",
+                    "description": "Fix: Displaying error message about no active cart after placing order",
+                    "filename": "magento/module-checkout/m245-Fix-customer-has-no-active-cart.patch",
                     "version-constraint": ">=100.4.5"
                 }
             ],
             "magento/module-inventory-sales": [
                 {
-                    "description": "FIX: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047",
+                    "description": "Fix: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047",
                     "filename": "magento/module-inventory-sales/BackOrderNotifyCustomerCondition.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "module-inventory-source-deduction-api": [
                 {
-                    "description": "FIX: Multisource Inventory, can't ship items when using default Stocks #21646",
+                    "description": "Fix: Multisource Inventory, can't ship items when using default Stocks #21646",
                     "filename": "magento/module-inventory-source-deduction-api/SourceDeductionService.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "magento/module-theme": [
                 {
-                    "description": "IMPROVEMENTS: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2",
+                    "description": "Improvements: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2",
                     "filename": "magento/module-theme/jquery-scroll-passive-2.patch",
-                    "version": "*"
+                    "version-constraint": "*"
+                }
+            ],
+            "mageworx/module-xmlsitemap": [
+                {
+                    "description": "Fix fatal error during sitemap generation process (LEDS)",
+                    "filename": "mageworx/module-xmlsitemap/mageworx-xmlsitemap-fix-generation.patch",
+                    "version-constraint": ">=3.3.0,<3.3.2"
                 }
             ],
             "mageworx/module-seomarkup" : [
                 {
-                    "description": "FIX: Support multiselect attribute for color information in SEO markup",
+                    "description": "Fix: Support multiselect attribute for color information in SEO markup",
                     "filename": "mageworx/module-seomarkup/mageworx-seomarkup-support-color-array.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 },
                 {
-                    "description": "Fix product reviews on category page (LEDS)",
-                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-fix-product-review.patch",
+                    "description": "Fix: product reviews on category page (LEDS)",
+                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-Fix-product-review.patch",
                     "version-constraint": ">=2.6.1"
+                }
+            ],
+            "mageworx/seo-suite-ultimate": [
+                {
+                    "description": "Fix: Area code is already set error (LED-1901)",
+                    "filename": "mageworx/seo-suite-ultimate/m22-mageworx-fix-xmlsitemap-area-code-error.patch",
+                    "version-constraint": "*"
                 }
             ],
             "mirasvit/module-core": [
                 {
                     "description": "Remove license verification",
                     "filename": "mirasvit/module-core/remove-license-verification.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "mirasvit/module-email-designer": [
                 {
-                    "description": "FIX: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))",
+                    "description": "Fix: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))",
                     "filename": "mirasvit/module-email-designer/VariableProvider.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "owebia/magento2-module-shared-php-config": [
                 {
-                    "description": "FIX: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given",
+                    "description": "Fix: TypeError: Owebia\\SharedPhpConfig\\Model\\Parser::parse(): Argument #2 ($configuration) must be of type string, null given",
                     "filename": "owebia/magento2-module-shared-php-config/nullable-type-parser.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ],
             "owebia/magento2-module-shared-license": [
                 {
-                    "description": "FIX: Removing the checking of the license",
+                    "description": "Fix: Removing the checking of the license",
                     "filename": "owebia/magento2-module-shared-license/removing-checking-license.patch",
-                    "version": "*"
+                    "version-constraint": "*"
                 }
             ]
         }
