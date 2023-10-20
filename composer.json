@@ -12,14 +12,14 @@
                 {
                     "description": "Fix: Zend_Json usage deprecated since 2.4.6 - Replace by Laminas Json.",
                     "filename": "aheadworks/module-automatic-related-products/replace-zend-laminas-json.patch",
-                    "version-constraint": "^1.9.2"
+                    "version-constraint": ">=1.9.2"
                 }
             ],
             "amasty/pgrid": [
                 {
                     "description": "Fix for Amasty filter 'Availability' on product grid (IPET-1069]",
                     "filename": "amasty/pgrid/amasty-pgrid-msi-availability.patch",
-                    "version-constraint": "^1.9.2"
+                    "version-constraint": ">=1.9.2"
                 }
             ],
             "comwrap/module-elasticsuite-blog-search": [
