@@ -17,11 +17,6 @@
             ],
             "amasty/pgrid": [
                 {
-                    "description": "Fix an error with duplicated insert to amasty_pgrid_qty_sold after product save",
-                    "filename": "amasty/pgrid/amasty-pgrid-fix-error-with-duplicated-insert.patch",
-                    "version-constraint": "^1.9.2"
-                },
-                {
                     "description": "Fix for Amasty filter 'Availability' on product grid (IPET-1069]",
                     "filename": "amasty/pgrid/amasty-pgrid-msi-availability.patch",
                     "version-constraint": "^1.9.2"
