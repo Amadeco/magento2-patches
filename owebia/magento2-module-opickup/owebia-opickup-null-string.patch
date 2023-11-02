@@ -1,0 +1,13 @@
+diff --git a/vendor/owebia/magento2-module-opickup/Observer/CopyFromQuoteToOrderObserver.php b/vendor/owebia/magento2-module-opickup/Observer/CopyFromQuoteToOrderObserver.php
+index 7670dc371..2c497580d 100644
+--- a/vendor/owebia/magento2-module-opickup/Observer/CopyFromQuoteToOrderObserver.php
++++ b/vendor/owebia/magento2-module-opickup/Observer/CopyFromQuoteToOrderObserver.php
+@@ -44,7 +44,7 @@ class CopyFromQuoteToOrderObserver implements \Magento\Framework\Event\ObserverI
+         }
+ 
+         if ($quote->hasData('opickup_pickup_point_address')) {
+-            $pickupPointAddress = json_decode($quote->getData('opickup_pickup_point_address'));
++            $pickupPointAddress = json_decode((string) $quote->getData('opickup_pickup_point_address'));
+             if ($pickupPointAddress) {
+                 $quoteShippingAddress = $quote->getShippingAddress();
+                 $oldShippingAddress = $order->getShippingAddress();

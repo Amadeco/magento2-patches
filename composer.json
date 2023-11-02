@@ -1,7 +1,7 @@
 {
     "name": "amadeco/magento2-patches",
     "type": "patchset",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0",
         "creativestyle/magento-patches": "^1.3"
@@ -108,6 +108,13 @@
                 {
                     "description": "Fix: VariableProvider.php: PHP 8 compatibility (explode(): Passing null to parameter #2 ($string))",
                     "filename": "mirasvit/module-email-designer/VariableProvider.patch",
+                    "version-constraint": "*"
+                }
+            ],
+            "owebia/magento2-module-opickup": [
+                {
+                    "description": "Fix: CopyFromQuoteToOrderObserver.php: PHP 8 (json_decode variable must be of type string, null given)",
+                    "filename": "owebia/magento2-module-opickup/owebia-opickup-null-string.patch",
                     "version-constraint": "*"
                 }
             ],
