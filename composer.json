@@ -1,7 +1,7 @@
 {
     "name": "amadeco/magento2-patches",
     "type": "patchset",
-    "version": "1.1.6.3",
+    "version": "1.1.7",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0",
         "creativestyle/magento-patches": "^1.3"
@@ -11,124 +11,278 @@
             "aheadworks/module-automatic-related-products": [
                 {
                     "description": "Zend_Json usage deprecated, replace by Laminas Json.",
-                    "filename": "aheadworks/module-automatic-related-products/replace-zend-laminas-json.patch",
-                    "version-constraint": "*"
-                }
-            ],
-            "amasty/pgrid": [
-                {
-                    "description": "Fix for Amasty filter 'Availability' on product grid (IPET-1069]",
-                    "filename": "amasty/pgrid/amasty-pgrid-msi-availability.patch",
+                    "filename": "amadeco/aheadworks/module-automatic-related-products/replace-zend-laminas-json.patch",
                     "version-constraint": "*"
                 }
             ],
             "comwrap/module-elasticsuite-blog-search": [
                 {
                     "description": "Magento 2.4.x support #18",
-                    "filename": "comwrap/module-elasticsuite-blog-search/collection.patch",
+                    "filename": "amadeco/comwrap/module-elasticsuite-blog-search/collection.patch",
                     "version-constraint": "*"
                 }
             ],
             "magento/framework": [
                 {
                     "description": "Improvements: Import styles for enabled modules only | https://github.com/vasilii-b/magento2-frontend-Improvements",
-                    "filename": "magento/framework/import-styles-for-enabled-modules-only.patch",
+                    "filename": "amadeco/magento/framework/import-styles-for-enabled-modules-only.patch",
+                    "version-constraint": "*"
+                },
+                {
+                    "description": "Sets secure cookie flag for FE cookies based on HTTPS presence",
+                    "filename": "magesuite/essential/magento/framework/framework-secure-cookie.patch",
                     "version-constraint": "*"
                 }
             ],
             "magento/magento2-base": [
                 {
                     "description": "Improvements: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1",
-                    "filename": "magento/magento2-base/jquery-scroll-passive-1.patch",
+                    "filename": "amadeco/magento/magento2-base/jquery-scroll-passive-1.patch",
                     "version-constraint": "*"
+                },
+                {
+                    "description": "Fix gallery issues with swiping items on mobiles",
+                    "filename": "magesuite/essential/magento/magento2-base/m246-fix-gallery-swipe-on-mobile.patch",
+                    "version-constraint": ">=2.4.6"
+                }
+            ],
+            "magento/module-catalog": [
+                {
+                    "description": "Fixes price-box issues, related to priceConfig and tier prices calculations",
+                    "filename": "magesuite/essential/magento/module-catalog/m24-price-box-fixes.patch",
+                    "version-constraint": ">=104.0.5"
+                },
+                {
+                    "description": "Add cache for breadcrumbs ",
+                    "filename": "magesuite/essential/magento/module-catalog/m24-breadcrumbs-path-cache.patch",
+                    "version-constraint": ">=104.0.5"
+                }
+            ],
+            "magento/module-catalog-search": [
+                {
+                    "description": "Remove deletion of products in partial indexing, Magento >= 2.4.3",
+                    "filename": "magesuite/essential/magento/module-catalog-search/m243plus-remove-deletion-of-products-in-partial-indexing.patch",
+                    "version-constraint": ">=102.0.3"
+                },
+                {
+                    "description": "Disable reindex of elasticsearch inside category_products indexer",
+                    "filename": "magesuite/essential/magento/module-catalog-search/disable-elasticsearch-reindex-in-category-product-indexer.patch",
+                    "version-constraint": ">=101.0.5"
+                }
+            ],
+            "magento/module-catalog-inventory": [
+                {
+                    "description": "Wrap cataloginventory indexer with transaction Magento 2.4.4+",
+                    "filename": "magesuite/essential/magento/module-catalog-inventory/m244-plus-wrap-cataloginventory-indexer-with-transaction.patch",
+                    "version-constraint": ">=100.4.4"
                 }
             ],
             "magento/module-checkout": [
                 {
                     "description": "Displaying error message about no active cart after placing order",
-                    "filename": "magento/module-checkout/m245-fix-customer-has-no-active-cart.patch",
+                    "filename": "amadeco/magento/module-checkout/m245-fix-customer-has-no-active-cart.patch",
                     "version-constraint": ">=100.4.5"
+                },
+                {
+                    "description": "Fixes undefined string being displayed when shipping method has no title - patch version for >=2.3.5",
+                    "filename": "magesuite/essential/magento/module-checkout/m235plus-shipping-method-undefined-title.patch",
+                    "version-constraint": ">=100.3.5"
+                },
+                {
+                    "description": "M2.4.4: add autocomplete to Checkout/Cart inputs - xml config",
+                    "filename": "magesuite/essential/magento/module-checkout/m244-autocomplete-checkout.patch",
+                    "version-constraint": ">=100.4.4"
+                },
+                {
+                    "description": "Replace jquery-ui fade effect with jquery fadeIn/fadeOut",
+                    "filename": "magesuite/essential/magento/module-checkout/replace-jquery-ui-fade.patch",
+                    "version-constraint": ">=100.4.2"
+                },
+                {
+                    "description": "Do not send billing address if form is invalid",
+                    "filename": "magesuite/essential/magento/module-checkout/m246-do-not-send-billing-address-if-invalid.patch",
+                    "version-constraint": ">=100.4.6"
+                },
+                {
+                    "description": "Fix validation error with region-id on address without region",
+                    "filename": "magesuite/essential/magento/module-checkout/fix-validation-error-with-region-id.patch",
+                    "version-constraint": ">=100.4.3"
+                },
+                {
+                    "description": "Adds domReady! dependency to Magento_Checkout/js/model/url-builder, so window.checkoutConfig is 100% loaded",
+                    "filename": "magesuite/essential/magento/module-checkout/m246-url-builder-with-domReady.patch",
+                    "version-constraint": ">=100.4.6"
+                }
+
+            ],
+            "magento/module-customer": [
+                {
+                    "description": "Customer data is lost on checkout page | https://magento.stackexchange.com/questions/231938/shipping-address-gets-missing-after-page-refresh-magento2",
+                    "filename": "amadeco/magento/module-customer/customer-data-lost-on-checkout.patch",
+                    "version-constraint": ">=100.4.5"
+                },
+                {
+                    "description": "Adds domReady! dependency to Magento_Customer/js/model/customer, so window.checkoutConfig is 100% loaded",
+                    "filename": "mageside/essential/magento/module-customer/m246-customer-data-with-domReady.patch",
+                    "version-constraint": ">=103.0.6"
+                },
+                {
+                    "description": "Adds domReady! dependency to Magento_Customer/js/model/customer-addresses.js, so window.checkoutConfig is 100% loaded",
+                    "filename": "mageside/essential/magento/module-customer/customer-addresses-domReady.patch",
+                    "version-constraint": ">=103.0.6"
+                }
+            ],
+            "magento/module-quote": [
+                {
+                    "description": "Fix translations in the rest api request",
+                    "filename": "magesuite/essential/magento/module-quote/fix-translations-in-the-rest-api-request.patch",
+                    "version-constraint": ">=101.2.1"
+                }
+            ],
+            "magento/module-inventory-catalog": [
+                {
+                    "description": "[TT-1324] Prevent legacy stock update using itself for product status change",
+                    "filename": "magesuide/essential/magento/module-inventory-catalog/m245_prevent_legacy_stock_update_using_itself_for_product_status_change.patch",
+                    "version-constraint": ">=1.3.0"
                 }
             ],
             "magento/module-inventory-sales": [
                 {
                     "description": "Translation problems: We don't have as many quantity as you requested, but we'll back order the remaining 1 #23047",
-                    "filename": "magento/module-inventory-sales/BackOrderNotifyCustomerCondition.patch",
+                    "filename": "amadeco/magento/module-inventory-sales/translate-backorder-notify-customer.patch",
                     "version-constraint": "*"
                 }
             ],
-            "module-inventory-source-deduction-api": [
+            "magento/module-inventory-source-deduction-api": [
                 {
                     "description": "Multisource Inventory can't ship items when using default Stocks #21646",
-                    "filename": "magento/module-inventory-source-deduction-api/SourceDeductionService.patch",
+                    "filename": "amadeco/magento/module-inventory-source-deduction-api/support-backorders-inventory-deduction.patch",
                     "version-constraint": "*"
+                }
+            ],
+            "magento/module-product-video": [
+                {
+                    "description": "Add touch event for fotorama to have video working on touch devices",
+                    "filename": "magesuite/essential/magento/module-product-video/fotorama-video-add-touchend-event-on-mobile.patch",
+                    "version-constraint": ">=100.4.0"
+                }
+            ],
+            "magento/module-sales": [
+                {
+                    "description": "Fix problem with filtering orders by creation date",
+                    "filename": "magesuite/essential/magento/module-sales/fix-problem-with-filtering-orders-by-creatation-date.patch",
+                    "version-constraint": ">=103.0.5"
+                },
+                {
+                    "description": "Fix problem with wrong storeId type when reordering",
+                    "filename": "magesuite/essential/magento/module-sales/m245_reorder_store_id_typecast.patch",
+                    "version-constraint": ">=103.0.5"
+                },
+                {
+                    "description": "Fix problem with division by zero when creating creditmemo with free shipping. Magento patch ACSD-50814_2.4.6",
+                    "filename": "magesuite/essential/magento/module-sales/m246-fix-division-by-zero-when-creating-creditmemo.patch",
+                    "version-constraint": ">=103.0.6"
                 }
             ],
             "magento/module-theme": [
                 {
                     "description": "Improvements: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 2",
-                    "filename": "magento/module-theme/jquery-scroll-passive-2.patch",
+                    "filename": "amadeco/magento/module-theme/jquery-scroll-passive-2.patch",
                     "version-constraint": "*"
+                },
+                {
+                    "description": "Sets secure cookie flag for FE cookies based on HTTPS presence",
+                    "filename": "magesuite/essential/magento/module-theme/theme-secure-cookie.patch",
+                    "version-constraint": "<=100.2.9 || >=101.0.0,<101.0.3"
+                },
+                {
+                    "description": "Fixes an empty mini-cart bug after adding products to the cart from the wishlist by making messages observable",
+                    "filename": "magesuite/essential/magento/module-theme/fix-make-messages-observable.patch",
+                    "version-constraint": ">=101.1.0"
+                }
+            ],
+            "magento/module-ui": [
+                {
+                    "description": "Load colorpicker depenencies on deman",
+                    "filename": "magesuite/essential/magento/module-ui/load-colorpicker-on-demand.patch",
+                    "version-constraint": ">=101.1.0"
+                },
+                {
+                    "description": "Remove validation for color in order to avoid loading tinycolor library",
+                    "filename": "magesuite/essential/magento/module-ui/m245-remove-color-validation-rule.patch",
+                    "version-constraint": ">=101.2.5"
                 }
             ],
             "mageworx/module-xmlsitemap": [
                 {
                     "description": "Fatal error during sitemap generation process (LEDS)",
-                    "filename": "mageworx/module-xmlsitemap/mageworx-xmlsitemap-fix-generation.patch",
+                    "filename": "amadeco/mageworx/module-xmlsitemap/mageworx-xmlsitemap-fix-generation.patch",
                     "version-constraint": ">=3.3.0,<3.3.2"
                 }
             ],
             "mageworx/module-seomarkup" : [
                 {
                     "description": "Support multiselect attribute for color schema information",
-                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-support-color-array.patch",
+                    "filename": "amadeco/mageworx/module-seomarkup/mageworx-seomarkup-support-color-array.patch",
                     "version-constraint": "*"
                 },
                 {
                     "description": "Product reviews on category page (LEDS)",
-                    "filename": "mageworx/module-seomarkup/mageworx-seomarkup-fix-product-review.patch",
+                    "filename": "amadeco/mageworx/module-seomarkup/mageworx-seomarkup-fix-product-review.patch",
                     "version-constraint": ">=2.6.1"
                 }
             ],
             "mageworx/seo-suite-ultimate": [
                 {
                     "description": "Area code is already set error (LED-1901)",
-                    "filename": "mageworx/seo-suite-ultimate/m22-mageworx-fix-xmlsitemap-area-code-error.patch",
+                    "filename": "amadeco/mageworx/seo-suite-ultimate/m22-mageworx-fix-xmlsitemap-area-code-error.patch",
                     "version-constraint": "*"
                 }
             ],
             "mirasvit/module-core": [
                 {
                     "description": "Remove license verification",
-                    "filename": "mirasvit/module-core/remove-license-verification.patch",
+                    "filename": "amadeco/mirasvit/module-core/remove-license-verification.patch",
                     "version-constraint": "*"
                 }
             ],
             "mirasvit/module-email-designer": [
                 {
                     "description": "PHP 8 compatibility - explode(): Passing null to parameter #2 ($string)",
-                    "filename": "mirasvit/module-email-designer/VariableProvider.patch",
+                    "filename": "amadeco/mirasvit/module-email-designer/VariableProvider.patch",
                     "version-constraint": "*"
                 }
             ],
             "owebia/magento2-module-opickup": [
                 {
                     "description": "PHP 8 compatibility - Value must be type of string, null returned",
-                    "filename": "owebia/magento2-module-opickup/owebia-opickup-null-string.patch",
+                    "filename": "amadeco/owebia/magento2-module-opickup/owebia-opickup-null-string.patch",
                     "version-constraint": "*"
                 }
             ],
             "owebia/magento2-module-shared-php-config": [
                 {
                     "description": "PHP 8 compatibility - Value must be type of string, null returned",
-                    "filename": "owebia/magento2-module-shared-php-config/nullable-type-parser.patch",
+                    "filename": "amadeco/owebia/magento2-module-shared-php-config/nullable-type-parser.patch",
                     "version-constraint": "*"
                 }
             ],
             "owebia/magento2-module-shared-license": [
                 {
                     "description": "Remove license verification",
-                    "filename": "owebia/magento2-module-shared-license/removing-checking-license.patch",
+                    "filename": "amadeco/owebia/magento2-module-shared-license/removing-checking-license.patch",
+                    "version-constraint": "*"
+                }
+            ],
+            "amasty/pgrid": [
+                {
+                    "description": "Prevent inserting empty values",
+                    "filename": "magesuite/essential/amasty/pgrid/prevent-inserting-empty-values.patch",
+                    "version-constraint": ">=1.10.17"
+                },
+                {
+                    "description": "Amasty filter 'Availability' on product grid (IPET-1069]",
+                    "filename": "amadeco/amasty/pgrid/amasty-pgrid-msi-availability.patch",
                     "version-constraint": "*"
                 }
             ]

@@ -1,0 +1,18 @@
+diff --git a/view/frontend/web/js/customer-data.js b/view/frontend/web/js/customer-data.js
+index 213aa105b..e978a9193 100644
+--- a/view/frontend/web/js/customer-data.js
++++ b/view/frontend/web/js/customer-data.js
+@@ -47,11 +47,14 @@ define([
+      * Invalidate Cache By Close Cookie Session
+      */
+     invalidateCacheByCloseCookieSession = function () {
+-        if (!$.cookieStorage.isSet('mage-cache-sessid')) {
++        if (!$.mage.cookies.get('mage-cache-sessid')) {
+             storage.removeAll();
+         }
+
+-        $.cookieStorage.set('mage-cache-sessid', true);
++        $.mage.cookies.set('mage-cache-sessid', true);
+     };
+
+     dataProvider = {
