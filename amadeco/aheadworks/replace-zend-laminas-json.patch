@@ -1,0 +1,13 @@
+diff --git a/Block/Related/Block.php b/Block/Related/Block.php
+index 39ea7a980..8f2001de2 100644
+--- a/Block/Related/Block.php
++++ b/Block/Related/Block.php
+@@ -206,7 +206,7 @@ class Block extends ElementTemplate
+      */
+     public function jsonEncode($params)
+     {
+-        return \Zend_Json::encode($params);
++        return \Laminas\Json\Json::encode($params);
+     }
+     /**
+      * Retrieve corresponding rule id for specific block
