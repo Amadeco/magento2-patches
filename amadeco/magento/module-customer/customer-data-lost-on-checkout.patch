@@ -2,7 +2,7 @@ diff --git a/view/frontend/web/js/customer-data.js b/view/frontend/web/js/custom
 index 213aa105b..e978a9193 100644
 --- a/view/frontend/web/js/customer-data.js
 +++ b/view/frontend/web/js/customer-data.js
-@@ -47,11 +47,14 @@ define([
+@@ -47,11 +47,11 @@ define([
       * Invalidate Cache By Close Cookie Session
       */
      invalidateCacheByCloseCookieSession = function () {
