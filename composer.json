@@ -1,7 +1,7 @@
 {
     "name": "amadeco/magento2-patches",
     "type": "patchset",
-    "version": "1.1.9",
+    "version": "1.1.10",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0"
     },
@@ -119,6 +119,11 @@
                     "description": "Customer data is lost on checkout page | https://magento.stackexchange.com/questions/231938/shipping-address-gets-missing-after-page-refresh-magento2",
                     "filename": "amadeco/magento/module-customer/customer-data-lost-on-checkout.patch",
                     "version-constraint": ">=100.4.5"
+                },
+                {
+                    "description": "Fix js errors in customer data when component not initialized, Magento 2.4.4+",
+                    "filename": "magesuite/essential/magento/module-customer/m244-plus-customer-data-initialization-fix.patch",
+                    "version-constraint": ">=103.0.4"
                 },
                 {
                     "description": "Adds domReady! dependency to Magento_Customer/js/model/customer, so window.checkoutConfig is 100% loaded",
