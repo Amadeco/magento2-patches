@@ -38,7 +38,7 @@
                     "description": "Fixes the active_tab param not applying on admin sections that use the tabs.js script #35779 | https://github.com/magento/magento2/pull/35779",
                     "filename": "amadeco/magento/magento2-base/admin-fixes-active-tab.patch",
                     "version-constraint": "*"
-                }
+                },
                 {
                     "description": "Improvements: Add patch jQuery scroll passive for mobile scrolling performance #35613 - 1",
                     "filename": "amadeco/magento/magento2-base/jquery-scroll-passive-1.patch",
