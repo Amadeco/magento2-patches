@@ -1,0 +1,13 @@
+diff --git a/lib/web/mage/backend/tabs.js b/lib/web/mage/backend/tabs.js
+index 0f3300da0..f26bfa0e1 100644
+--- a/lib/web/mage/backend/tabs.js
++++ b/lib/web/mage/backend/tabs.js
+@@ -65,7 +65,7 @@ define([
+                 this.anchors :
+                 this._getList().find('> li > a[href]');
+ 
+-            return anchors.index($('#' + id));
++            return anchors.index($('a#' + id));
+         },
+ 
+         /**
