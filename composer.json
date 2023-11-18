@@ -264,6 +264,11 @@
             ],
             "owebia/magento2-module-opickup": [
                 {
+                    "description": "Output label is not working as code do not check the right variable",
+                    "filename": "amadeco/owebia/magento2-module-opickup/owebia-opicpup-error-label.patch",
+                    "version-constraint": "*"
+                },
+                {
                     "description": "PHP 8 compatibility - Value must be type of string, null returned",
                     "filename": "amadeco/owebia/magento2-module-opickup/owebia-opickup-null-string.patch",
                     "version-constraint": "*"
