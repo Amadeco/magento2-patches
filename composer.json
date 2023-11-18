@@ -1,7 +1,7 @@
 {
     "name": "amadeco/magento2-patches",
     "type": "patchset",
-    "version": "1.1.11",
+    "version": "1.1.12",
     "require": {
         "creativestyle/composer-plugin-patchset": "^2.0"
     },
@@ -265,7 +265,7 @@
             "owebia/magento2-module-opickup": [
                 {
                     "description": "Output label is not working as code do not check the right variable",
-                    "filename": "amadeco/owebia/magento2-module-opickup/owebia-opicpup-error-label.patch",
+                    "filename": "amadeco/owebia/magento2-module-opickup/owebia-opickup-error-label.patch",
                     "version-constraint": "*"
                 },
                 {

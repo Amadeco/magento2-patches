@@ -1,10 +1,10 @@
-diff --git a/vendor/owebia/magento2-module-opickup/Controller/Adminhtml/Order/AbstractLabel.php b/vendor/owebia/magento2-module-opickup/Controller/Adminhtml/Order/AbstractLabel.php
+diff --git a/Controller/Adminhtml/Order/AbstractLabel.php b/Controller/Adminhtml/Order/AbstractLabel.php
 index 8882edd14..3f25850fc 100644
---- a/vendor/owebia/magento2-module-opickup/Controller/Adminhtml/Order/AbstractLabel.php
-+++ b/vendor/owebia/magento2-module-opickup/Controller/Adminhtml/Order/AbstractLabel.php
+--- a/Controller/Adminhtml/Order/AbstractLabel.php
++++ b/Controller/Adminhtml/Order/AbstractLabel.php
 @@ -247,7 +247,7 @@ abstract class AbstractLabel extends \Magento\Backend\App\Action
          }
- 
+
          $label = $this->getLabel($shipment);
 -        if (!empty($label['number']) && !empty($label['content'])) {
 +        if (!empty($label['number']) && !empty($label['pdf'])) {
