@@ -172,7 +172,7 @@
             "magento/module-page-builder": [
                 {
                     "description": "Remove large JS from the define to prevent all of these JS from being loaded with the main file",
-                    "filename": "amadeco/amadeco/magento/module-page-builder/optimize-video-background-js.patch",
+                    "filename": "amadeco/magento/module-page-builder/optimize-video-background-js.patch",
                     "version-constraint": "*"
                 }
             ],
