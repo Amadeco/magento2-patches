@@ -169,6 +169,13 @@
                     "version-constraint": "*"
                 }
             ],
+            "magento/module-page-builder": [
+                {
+                    "description": "Remove large JS from the define to prevent all of these JS from being loaded with the main file",
+                    "filename": "amadeco/magento2-patches/amadeco/magento/module-page-builder/optimize-video-background-js.patch",
+                    "version-constraint": "*"
+                }
+            ],
             "magento/module-product-video": [
                 {
                     "description": "Add touch event for fotorama to have video working on touch devices",
