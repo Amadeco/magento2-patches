@@ -1,0 +1,13 @@
+diff --git a/Model/RuleRegistry.php b/Model/RuleRegistry.php
+index b20bcfb59..485fe5644 100644
+--- a/Model/RuleRegistry.php
++++ b/Model/RuleRegistry.php
+@@ -10,6 +10,8 @@ use Aheadworks\Autorelated\Api\Data\RuleInterface;
+  */
+ class RuleRegistry
+ {
++    private $ruleRegistry;
++
+     /**
+      * Retrieve Rule from registry
+      *

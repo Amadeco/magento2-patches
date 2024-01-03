@@ -1,17 +1,23 @@
 diff --git a/view/base/web/js/widget/video-background.js b/view/base/web/js/widget/video-background.js
-index d918ab8f6..e42c001f1 100644
+index 61fdf615b..88669d151 100644
 --- a/view/base/web/js/widget/video-background.js
 +++ b/view/base/web/js/widget/video-background.js
-@@ -18,23 +18,26 @@ define([
-             return;
-         }
- 
--        $element.addClass('jarallax');
--        $element.attr('data-jarallax', '');
-+        require(['jarallax', 'jarallaxVideo', 'vimeoWrapper'], function () {
-+            $element.addClass('jarallax');
-+            $element.attr('data-jarallax', '');
- 
+@@ -3,10 +3,7 @@
+  * See COPYING.txt for license details.
+  */
+ define([
+-    'jquery',
+-    'jarallax',
+-    'jarallaxVideo',
+-    'vimeoWrapper'
++    'jquery'
+ ], function ($) {
+     'use strict';
+
+@@ -21,20 +18,25 @@ define([
+         $element.addClass('jarallax');
+         $element.attr('data-jarallax', '');
+
 -        window.jarallax($element[0], {
 -            imgSrc: $element.data('videoFallbackSrc'),
 -            speed: !isNaN(parallaxSpeed) ? parallaxSpeed : 0.5,
@@ -26,6 +32,10 @@ index d918ab8f6..e42c001f1 100644
 -            if ($element[0].jarallax.$video) {
 -                $element[0].jarallax.$video.style.visibility = 'visible';
 -            }
++        require(['jarallax', 'jarallaxVideo', 'vimeoWrapper'], function () {
++            $element.addClass('jarallax');
++            $element.attr('data-jarallax', '');
++
 +            window.jarallax($element[0], {
 +                imgSrc: $element.data('videoFallbackSrc'),
 +                speed: !isNaN(parallaxSpeed) ? parallaxSpeed : 0.5,
@@ -36,7 +46,6 @@ index d918ab8f6..e42c001f1 100644
 +                elementInViewport: $element.data('elementInViewport') &&
 +                    $element[0].querySelector($element.data('elementInViewport'))
 +            });
-+            
 +            $element[0].jarallax.video && $element[0].jarallax.video.on('started', function () {
 +                if ($element[0].jarallax.$video) {
 +                    $element[0].jarallax.$video.style.visibility = 'visible';
@@ -45,3 +54,4 @@ index d918ab8f6..e42c001f1 100644
          });
      };
  });
+\ No newline at end of file

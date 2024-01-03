@@ -9,6 +9,11 @@
         "patchset": {
             "aheadworks/module-automatic-related-products": [
                 {
+                    "description": "Problem with PHP>8.1",
+                    "filename": "amadeco/aheadworks/module-automatic-related-products/declare-variable-class.patch",
+                    "version-constraint": "*"
+                },
+                {
                     "description": "Zend_Json usage deprecated, replace by Laminas Json.",
                     "filename": "amadeco/aheadworks/module-automatic-related-products/replace-zend-laminas-json.patch",
                     "version-constraint": "*"
@@ -166,13 +171,6 @@
                 {
                     "description": "Multisource Inventory can't ship items when using default Stocks #21646",
                     "filename": "amadeco/magento/module-inventory-source-deduction-api/support-backorders-inventory-deduction.patch",
-                    "version-constraint": "*"
-                }
-            ],
-            "magento/module-page-builder": [
-                {
-                    "description": "Remove large JS from the define to prevent all of these JS from being loaded with the main file",
-                    "filename": "amadeco/magento/module-page-builder/optimize-video-background-js.patch",
                     "version-constraint": "*"
                 }
             ],
